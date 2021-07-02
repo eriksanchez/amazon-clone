@@ -43,7 +43,7 @@ function OrderScreen(props) {
             }
         }
         
-        },[dispatch, order, orderId, sdkReady])
+        },[dispatch, order, orderId, sdkReady, successPay])
     const successPaymentHandler = (paymentResult) =>{
         //TODO: dispatch pay order
         dispatch(payOrder(order, paymentResult))
